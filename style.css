@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+      /* manu style */
+.manu{
+    background: rgba(83, 48, 117, 0.897);
+    text-align: center;
+}
+.manu ul{
+    
+}
+.manu ul li{
+    display: inline-block;
+}
+.manu ul li a{
+    text-decoration: none;
+    display:block;
+    color: whitesmoke;
+    padding: 12px;
+}
+.manu ul li a:hover{
+    background-color: black;
+}
+/* body style */
+.div1{
+    width: 1000px;
+    margin: 0 auto;
+    background: rgb(193, 219, 166);
+    border: 1px solid red;
+    padding:20px;
+}
+.div1 p{
+    color: red;
+    text-align: center;
+}
+.colums{
+   overflow: hidden;
+   border: 3px solid red;
+}
+.div3{
+    width: 32.33%;
+    float: left;
+    padding-right: 1%;
+}
+.div3 p{
+    border: 1px solid black;
+    margin-top: 30px;
+}
