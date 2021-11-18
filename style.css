@@ -1,15 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
       /* manu style */
 .manu{
     background: rgba(83, 48, 117, 0.897);
     text-align: center;
 }
-.manu ul{
-    
-}
+
 .manu ul li{
     display: inline-block;
 }
@@ -30,6 +29,13 @@
     border: 1px solid red;
     padding:20px;
 }
+
+/* .float-clear ::after {
+    content: "";
+    clear: both;
+    display: block;
+} */
+
 .div1 p{
     color: red;
     text-align: center;
@@ -47,3 +53,165 @@
     border: 1px solid black;
     margin-top: 30px;
 }
+
+/* main-2nd */
+
+.main2nd{
+    text-align: center;
+    max-width: 1024px;
+    margin: auto;
+}
+.header{
+background-color: brown;
+padding:10PX;
+}
+.header-manu{
+background-color: chartreuse;
+}
+.header-manu ul{
+    
+}
+.header-manu ul li{
+    display: inline-block;
+    list-style: none;
+}
+.header-manu ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    display: inline-block;
+}
+
+.header-manu ul li a:hover{
+    background-color: black;
+}
+
+.img-sectiom a img{
+    width:100%;
+    height: 400px;
+    display: block;
+}
+.img-sectiom a{
+    display:block;
+}
+.img2 a img{
+    width:100%;
+    height: 400px;
+    display: block;
+}
+
+.content{ 
+    width:1000px;
+    height:auto;
+}
+
+.footer-manu{
+    background-color: black;
+}
+.footer-manu ul li{
+    display: inline-block;
+}
+.footer-manu ul a{
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.footer-manu ul a:hover{
+    background-color:rgba(83, 48, 117, 0.897);
+}
+
+.parenDiv{
+    
+}
+
+.div4{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color:red;
+    top: 31px;
+    left: 126px;
+}
+.div5{
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    position: relative;
+    left: 227px;
+}
+.div6{
+    width: 200px;
+    height: 200px;
+    background-color: seagreen;
+    position: relative;
+    left: 297px;
+    bottom: 62px;
+}
+
+
+/* forom section */
+
+.forom{
+ background:rgba(250, 128, 114, 0.541);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height:100vh;
+}
+
+.contact-form{
+    background:#fff;
+    width: 600px;
+    border: 1px solid purple;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact-form h3{
+   color: #6A6064;
+   font-size: 30px; 
+    margin-bottom: 20px;
+}
+.input-group-wraper{
+  display: flow-root;    /*  this proparty use for float clear */
+  margin-bottom: 20px; 
+}
+.input-group{
+    width: 48%;
+    float: left;
+}
+.input-group input[type = tex]{
+    width: 90%;
+    height: 35px;
+    outline: none;
+    border: none;
+    background: wheat;
+}
+label{
+    display: block;
+    color: #6A6064;
+    font-size: 15px;
+    font-weight: 600;
+}
+.subject-wrapper{
+    margin-bottom: 20px;
+}
+.btn{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background: #4373D9;
+    border:none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+select{
+    width: 100%;
+    height: 35px;
+    background: wheat;
+    border: none;
+    outline: none;
+}
+   
+         /* salim rana */
