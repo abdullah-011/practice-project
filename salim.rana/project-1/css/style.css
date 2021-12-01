@@ -14,6 +14,7 @@ a{
 .clear{
     display:flow-root;
 }
+.clear2{overflow: auto;}
 .overflow{
     overflow: hidden;
 }
@@ -137,7 +138,7 @@ visibility: visible;
  
 /* caloso > < simble style */
 
-.slider-active .owl-prev span{
+ .slider-active .owl-prev .fa-angle-left{
     width:100px;
     color:#fff; 
     position:absolute;
@@ -150,7 +151,7 @@ visibility: visible;
     line-height: 28px;
 }
 
-.slider-active .owl-next span{
+.slider-active .owl-next .fa-angle-right{
     width:100px;
     color:#fff; 
     position:absolute;
@@ -163,70 +164,14 @@ visibility: visible;
     line-height: 28px;
 }
 
-/* .owl-dots{
-    width:20px;
-    height:20px;
-    border-radius: 50%;
-    background: red;
-    color:red;
-    margin: 40px 2px;
-    text-align:center;
-    display: inline-block;
-    position: absolute;
-    z-index: 9999;
-    left: 50%;
-} */
-/* button.owl-dot{
-    width:20px;
-    height:20px;
-    border-radius: 50%;
-    background: red;
-    color:red;
-    background-color: #4272d7;
-    margin: 40px 2px;
-    text-align:center;
-    display: inline-block;
-    position: absolute;
-    z-index: 9999;
-    left: 50%;
-} */
- 
-.owl-nav{
- position:absolute;
- top:0;
- left:25%;
-}
-.owl-dots{
-    /* border: 1px solid black;
-    background: red;
-    display:inline-block;
-    height:20px;
-    width:20px;
-    margin:5px; */
-
-}
-.owl-dots .owl-dot{
-   
-}
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-
-    border: 2px solid width;
-    display: block;
-    height:20px;
-    width:20px;
-    margin:5px;
-    background:#7e0c61;
-    position:absolute;
-    top:50%;
-    left:50%;
-    z-index: 9999;
-}
-
-
        /* call to action area  */
-
+.col-3{width:25%;float:left;padding: 0 15px;}
     .col-4{
         width:33.33%;
+        float: left;
+    }
+    .col-6{
+        width:50%;
         float: left;
     }
     .col-8{
@@ -294,9 +239,7 @@ visibility: visible;
     height:100%;
     transition: 0.5s;
     transform: translateY(79%);
-   
 }
-.features-icon{}
 .features-icon i{
     color:#fff;
     display: inline-block;
@@ -379,13 +322,337 @@ display: flex;
     line-height: 25px;
     padding-top: 10px;
 }
+/* service area End */
+/* project area Start */
 
+.project-title{
+    margin-bottom: -23px;
+    padding-top: 23px; 
+} 
+.section-title.project-title h2{
+     color:#fff;
+    }
+.section-title.project-title h2::before {
+    background: #fff;
+}
 
+.project-area{
+    background: black;
+}
+.project-wrapper{
+    position: relative;
+    margin-right: -12px;
+    padding: 70px 0;
+}
+.project-wrapper:hover .project-img::before{
+    opacity: 1;
+    transition: .50s;
+}
+.project-img{
+    position: relative;
+}
+.project-img::before{
+    content: "";
+    background:#507bd6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.project-img img{
+    width: 100%;
+}
+.project-content{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    display: block;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+.project-wrapper:hover .project-content{
+    opacity: 1;
+    visibility: visible
+}
 
+.project-content a{
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom:20px;
+    text-decoration: none;
+    font-size:18px;
+    transition: all 0.3s;
+}
+.project-content span{
+    color: #fff;
+    font-size:13px;
+}
 
+/* project area end */
+/* video area start */
+.pt{padding-top: 70px;}
+.pb{padding-bottom: 70px;}
+.pb-50{padding-bottom: 50px;}
+.video img{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+.video{
+    position: relative;
+}
 
+.video a {
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 55px;
+        width: 55px;
+        margin: auto;
+        border:5px solid white;
+        border-radius: 50%;
+        text-align: center;
+        line-height:46px;
+        font-size: 25px;
 
+    }
 
+.video a i{
+ color: #fff;
+}
+.choose-area {
+    padding: 13px;
+    padding-left: 44px;
+}
+.choose-title-area{
+    display:flex;
+}
+.choose-title-area i{
+    line-height: 2;
+    height: 33px;
+    width: 28px;
+}
+.choose-title-area h3{
+    margin: 0 0 12px 13px;
+}
+/* video area end */
 
+ /* working area start  */
+ .working-area{
+     background-color: antiquewhite;
+     padding:180px 0 100px 0;
+ }
+ .section-title p{
+     margin: 30px;
+ }
+ .section-title a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid blue;
+    background: blue;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 5px;
+ }
 
+     /* blog-area */
+ .blog-img img{
+     width: 100%;
+ }
+ .blog-area-left{
+    padding: 62px 0 0 29px;
+}
 
+ .blog-img{
+     position: relative;
+     width: 100%;
+     height: auto;
+ }
+ .blog-img > span{
+     position: absolute;
+     background:#1f2636;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     color: #fff;
+    font-size:11px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+ }
+.blog-img{
+ float:left;
+ position: relative;
+ width: 35%;
+}
+ .blog-content{
+     padding-left: 25px;
+ }
+ .blog-content >h3{
+     font-size:18px;
+     font-weight: 700;
+     margin-bottom: 25px;
+     color: #555;
+ }
+.blog-content > p{
+    color: #666;
+    line-height: 25px;
+    margin-bottom:25px;
+}
+.blog-meta a{
+    color: #555;
+    font-size: 13px;
+}
+.blog-meta span{
+    margin-right: 25px;
+}
+.blog-meta span a{
+    color: #555;
+    font-size: 13px;
+    text-decoration: none;
+}
+.blog-meta span a i{
+    color: #ccc;
+}
+
+ .blog-content{
+     float: left;
+     padding-left: 20px;
+     width:65%;
+ }
+
+.section-title.border-left {
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+.section-title.border-left > h2::before {
+    margin: 0;
+}
+.section-title{
+    position: relative;
+}
+
+ .blog-activ .owl-nav .fa-angle-left{
+    position: absolute;
+   top: -61px;
+   left: 225px;
+   border: 1px solid #ccc;
+   height: 30px;
+   width: 30px;
+   line-height: 30px;
+   border-radius: 50%;
+   background:black;
+   color: white;
+}
+.blog-activ .owl-nav .fa-angle-right{
+    position: absolute;
+   top: -61px;
+   left: 275px;
+   border: 1px solid #ccc;
+   height: 30px;
+   width: 30px;
+   line-height: 30px;
+   border-radius: 50%;
+   background:black;
+   color: white;
+}
+
+.gray-bg{
+    background:rgb(170, 165, 165)
+}
+ 
+/* footer area */
+footer {
+    background-color:#171a21;
+    
+}
+.footer-area{
+    padding: 60px 0;
+}
+.footer-widget p{
+    color: #999999;
+    line-height:22px;
+    margin-bottom:30px;
+}
+.footer-widget img{
+     background-color: #4672d7;
+     padding: 10px;
+     margin-bottom: 10px;
+}
+.footer-widget h3{
+    color:#fff;
+    font-size:15px;
+    text-transform:uppercase;
+    margin-bottom:40px;
+}
+.footer-social > a{
+    background: #1b2334;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    height:35px;
+    width: 35px;
+    text-align: center;
+    border-radius:50%;
+    line-height:35px;
+    transition: all 0.9s;
+}
+.footer-social > a:hover{
+    background-color: #4672d7;
+    height:40px;
+    width: 40px;
+    line-height: 40px;
+}
+.footer-link{}
+.footer-link li{
+    margin-bottom: 20px;
+}
+.footer-link li a{
+    color: #ccc;
+    font-size: 13px;
+    text-decoration: none;
+}
+.footer-content li{
+    color: #999999;
+    font-size:13px;
+    line-height:22px;
+    margin-bottom:15px;
+}
+.footer-widget form input{
+    background: #2f3138;
+    border: 0 none;
+    color: #fff;
+    height:40px;
+    width:100%;
+    padding:0 15px;
+}
+.footer-widget form{
+    position: relative;
+}
+.footer-widget form button{
+    background: #4272d7;
+    border: 0 none;
+    color: #fff;
+    font-weight: 700;
+    height: 100%;
+    padding: 0 15px;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.copyright-area{
+    padding: 30px 0;
+    border-top: 1px solid #23262c;
+}
+.copyright-text{
+    text-align: center;
+    color: #fff;
+    
+}
